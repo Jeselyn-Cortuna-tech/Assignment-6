@@ -7,7 +7,7 @@ load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = os.getenv("s4w$!t2@7&mx7#fkvqf^36a*m2*n+80es^_i3hggfkkn0=3lm9")
+SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = False
 
 ALLOWED_HOSTS = ["localhost", "127.0.0.1", ".onrender.com"]
@@ -66,9 +66,9 @@ LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/login/'
 
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': os.environ.get("dsrjui7lc"),
-    'API_KEY': os.environ.get("652182799934329"),
-    'API_SECRET': os.environ.get("Y6LY-xWjaVqiGv4NSRhdeNJ2wSI"),
+    'CLOUD_NAME': os.environ.get("CLOUDINARY_CLOUD_NAME"),
+    'API_KEY': os.environ.get("CLOUDINARY_API_KEY"),
+    'API_SECRET': os.environ.get("CLOUDINARY_API_SECRET"),
 }
 
 STORAGES = {
